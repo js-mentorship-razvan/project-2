@@ -5,11 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Movie Collections</title>
+
 </head>
+<title>Movie Collections</title>
 
 <body>
+    <h1>Movie Collections</h1>
+    <label id="title" for="Title">Title:</label>
+    <textarea id="title" name="title" rows="1" cols="40"></textarea>
+    <label id="shortDescription" for="shortDescription">Short Description</label>
+    <textarea id="shortDescription" name="shortDescription" rows="1" cols="40"></textarea>
+    <label for="selectGenres">Genres</label>
+    <select id="selectGenres" multiple size="3">
+        <option value="" selected>--Hold "CTRL" to select multiple options--</option>
+        <option value="action">Action</option>
+        <option value="adventure">Adventure</option>
+        <option value="comedy">Comedy</option>
+        <option value="crime">Crime</option>
+        <option value="drama">Drama</option>
+        <option value="fantasy">Fantasy</option>
+        <option value="historical">Historical</option>
+        <option value="historicalFiction">Historical Fiction</option>
+        <option value="horror">Horror</option>
+        <option value="magicRealism">Magic Realism</option>
+        <option value="mystery">Mystery</option>
+        <option value="paranoidFiction">Paranoid Fiction</option>
+        <option value="philosophical">Philosophical</option>
+        <option value="political">Political</option>
+        <option value="romance">Romance</option>
+        <option value="saga">Saga</option>
+        <option value="satire">Satire</option>
+        <option value="scienceFiction">Science Fiction</option>
+        <option value="social">Social</option>
+        <option value="speculative">Speculative</option>
+        <option value="thriller">Thriller</option>
+        <option value="urban">Urban</option>
+        <option value="western">Western</option>
+    </select>
+    <label for="rating">Rating</label>
 
+    <select id="rating">
+        <option value="selectRating" selected>Select Rating</option>
+        <option value="10">10</option>
+        <option value="9">9</option>
+        <option value="8">8</option>
+        <option value="7">7</option>
+        <option value="6">6</option>
+        <option value="5">5</option>
+        <option value="4">4</option>
+        <option value="3">3</option>
+        <option value="2">2</option>
+        <option value="1">1</option>
+    </select>
+    <label id="releaseDate" for="releaseDate">Release Date</label>
+    <textarea id="releaseDate" name="releaseDate" rows="1" cols="40"></textarea>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
