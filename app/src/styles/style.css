@@ -3,11 +3,24 @@ h1 {
     text-align: center;
 }
 
+.checkbox-grid li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+p,
 label {
+    font-family: 'Roboto', sans-serif;
     display: block;
     font-weight: bold;
     margin-bottom: 10px;
 }
+
+#input {
+    margin: .4rem;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -30,3 +43,4 @@ textarea {
 #submit {
     margin-top: 10px;
 }
+

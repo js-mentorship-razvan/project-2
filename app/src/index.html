@@ -20,34 +20,173 @@
     <label id="shortDescription" for="shortDescription">Short Description</label>
     <textarea id="shortDescription" name="shortDescription" rows="1" cols="40"></textarea>
    
-    <label for="selectGenres">Genres</label>
-    <select id="selectGenres" multiple size="3">
-        <option value="" selected>--Hold "CTRL" to select multiple options--</option>
-        <option value="action">Action</option>
-        <option value="adventure">Adventure</option>
-        <option value="comedy">Comedy</option>
-        <option value="crime">Crime</option>
-        <option value="drama">Drama</option>
-        <option value="fantasy">Fantasy</option>
-        <option value="historical">Historical</option>
-        <option value="historicalFiction">Historical Fiction</option>
-        <option value="horror">Horror</option>
-        <option value="magicRealism">Magic Realism</option>
-        <option value="mystery">Mystery</option>
-        <option value="paranoidFiction">Paranoid Fiction</option>
-        <option value="philosophical">Philosophical</option>
-        <option value="political">Political</option>
-        <option value="romance">Romance</option>
-        <option value="saga">Saga</option>
-        <option value="satire">Satire</option>
-        <option value="scienceFiction">Science Fiction</option>
-        <option value="social">Social</option>
-        <option value="speculative">Speculative</option>
-        <option value="thriller">Thriller</option>
-        <option value="urban">Urban</option>
-        <option value="western">Western</option>
-    </select>
     
+   <ul class="checkbox-grid">
+
+    <p>Select movie's genres:</p>
+
+    <li><div>
+        <input type="checkbox" id="action" name="genres" value="action">
+        <label for="action">Action</label>
+    </div>
+    </li>
+
+    <li>
+    <div>
+            <input type="checkbox" id="adventure" name="genres" value="adventure">
+            <label for="adventure">Adventure</label>
+    </div>
+    </li>
+    
+    <li>
+    <div>
+            <input type="checkbox" id="comedy" name="genres" value="comedy">
+            <label for="comedy">Comedy</label>
+    </div>
+    </li>
+
+    <li>
+    <div>
+            <input type="checkbox" id="crime" name="genres" value="crime">
+            <label for="crime">Crime</label>
+    </div>
+    </li>
+
+    <li>
+    <div>
+            <input type="checkbox" id="drama" name="genres" value="drama">
+            <label for="drama">Drama</label>
+    </div>
+    </li>
+
+    <li>
+    <div>
+            <input type="checkbox" id="fantasy" name="genres" value="fantasy">
+            <label for="fantasy">Fantasy</label>
+    </div>
+    </li>
+
+    <li>
+    <div>
+            <input type="checkbox" id="historical" name="genres" value="historical">
+            <label for="historical">Historical</label>
+    </div>
+    </li>
+
+    <li>
+    <div>
+            <input type="checkbox" id="historical-fiction" name="genres" value="historical-fiction">
+            <label for="historical-fiction">Historical Fiction</label>
+    </div>
+    </li>
+
+    <li>
+    <div>
+            <input type="checkbox" id="horror" name="genres" value="horror">
+            <label for="horror">Horror</label>
+    </div>
+    </li>
+
+    <li>
+    <div>
+            <input type="checkbox" id="magic-realism" name="genres" value="magic-realism">
+            <label for="magic-realism">Magic Realism</label>
+    </div>
+    </li>
+
+    <li>
+    <div>
+            <input type="checkbox" id="mystery" name="genres" value="mystery">
+            <label for="mystery">Mystery</label>
+    </div>
+
+    <li>
+    <div>
+            <input type="checkbox" id="paranoid-fiction" name="genres" value="paranoid-fiction">
+            <label for="paranoid-fiction">Paranoid Fiction</label>
+    </div>
+    </li>
+
+    <li>
+    <div>
+            <input type="checkbox" id="philosophical" name="genres" value="philosophical">
+            <label for="philosophical">Philosophical</label>
+    </div>
+    </li>
+
+    <li>
+    <div>
+            <input type="checkbox" id="political" name="genres" value="political">
+            <label for="political">Political</label>
+    </div>
+    </li>
+
+    <li>
+    <div>
+            <input type="checkbox" id="romance" name="genres" value="romance">
+            <label for="romance">Romance</label>
+    </div>
+    </li>
+
+    <li>
+    <div>
+            <input type="checkbox" id="saga" name="genres" value="saga">
+            <label for="saga">Saga</label>
+    </div>
+    </li>
+
+    <li>
+    <div>
+            <input type="checkbox" id="satire" name="genres" value="satire">
+            <label for="satire">Satire</label>
+    </div>
+    </li>
+
+    <li>
+    <div>
+            <input type="checkbox" id="science-fiction" name="genres" value="science-fiction">
+            <label for="science-fiction">Science Fiction</label>
+    </div>
+    </li>
+
+    <li>
+    <div>
+            <input type="checkbox" id="social" name="genres" value="social">
+            <label for="social">Social</label>
+    </div>
+    </li>
+
+    <li>
+    <div>
+            <input type="checkbox" id="speculative" name="genres" value="speculative">
+            <label for="speculative">Speculative</label>
+    </div>
+    </li>
+
+    <li>
+    <div>
+            <input type="checkbox" id="thriller" name="genres" value="thriller">
+            <label for="thriller">Thriller</label>
+    </div>
+    </li>
+
+    <li>
+    <div>
+            <input type="checkbox" id="urban" name="genres" value="urban">
+            <label for="urban">Urban</label>
+    </div>
+    </li>
+
+    <li>
+    <div>
+            <input type="checkbox" id="western" name="genres" value="western">
+            <label for="western">Western</label>
+    </div>
+    </li>
+    
+</ul>
+
+<div>
     <label for="rating">Rating</label>
     <select id="rating">
         <option value="selectRating" selected>Select Rating</option>
@@ -62,6 +201,7 @@
         <option value="2">2</option>
         <option value="1">1</option>
     </select>
+</div>
 
     <label id="releaseDate" for="releaseDate">Release Date</label>
     <input type="date" id="releaseDate" name="release-date" value="2019-05-05"
