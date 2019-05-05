@@ -18,6 +18,8 @@ label {
 }
 
 #input {
+    padding: 10px;
+    height: 40px;
     margin: .4rem;
 }
 
@@ -42,5 +44,10 @@ textarea {
 
 #submit {
     margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    margin-bottom: 20px;
 }
 

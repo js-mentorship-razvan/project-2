@@ -14,11 +14,11 @@
 
 <body>
     <h1>Movie Collections</h1>
-    <label id="title" for="Title">Title:</label>
-    <textarea id="title" name="title" rows="1" cols="40"></textarea>
+    <label id="inpTitle" for="inpTitle">Title:</label>
+    <textarea id="inpTitle" name="inpTitle" rows="1" cols="40"></textarea>
     
-    <label id="shortDescription" for="shortDescription">Short Description</label>
-    <textarea id="shortDescription" name="shortDescription" rows="1" cols="40"></textarea>
+    <label id="inpShortDescription" for="inpShortDescription">Short Description</label>
+    <textarea id="inpShortDescription" name="inpShortDescription" rows="1" cols="40"></textarea>
    
     
    <ul class="checkbox-grid">
@@ -208,8 +208,13 @@
         min="1800-01-01" max="2019-05-05">
 
     <div> 
-    <input type="submit" id="submit" value="Submit Movie">
+    <input type="submit" id="inpSubmit" value="Submit Movie">
     </div>  
+
+    <fieldset>
+        <legend>Movies stored</legend>
+        <div id="lsOutput"></div>
+    </fieldset>
     
     <script src="js/script.js"></script>
 </body>
