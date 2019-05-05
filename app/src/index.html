@@ -16,8 +16,10 @@
     <h1>Movie Collections</h1>
     <label id="title" for="Title">Title:</label>
     <textarea id="title" name="title" rows="1" cols="40"></textarea>
+    
     <label id="shortDescription" for="shortDescription">Short Description</label>
     <textarea id="shortDescription" name="shortDescription" rows="1" cols="40"></textarea>
+   
     <label for="selectGenres">Genres</label>
     <select id="selectGenres" multiple size="3">
         <option value="" selected>--Hold "CTRL" to select multiple options--</option>
@@ -45,8 +47,8 @@
         <option value="urban">Urban</option>
         <option value="western">Western</option>
     </select>
+    
     <label for="rating">Rating</label>
-
     <select id="rating">
         <option value="selectRating" selected>Select Rating</option>
         <option value="10">10</option>
@@ -60,9 +62,15 @@
         <option value="2">2</option>
         <option value="1">1</option>
     </select>
+
     <label id="releaseDate" for="releaseDate">Release Date</label>
     <input type="date" id="releaseDate" name="release-date" value="2019-05-05"
         min="1800-01-01" max="2019-05-05">
+
+    <div> 
+    <input type="submit" id="submit" value="Submit Movie">
+    </div>  
+    
     <script src="js/script.js"></script>
 </body>
 
