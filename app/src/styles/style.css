@@ -58,3 +58,6 @@ fieldset {
     margin-bottom: 20px;
 }
 
+.checkbox {
+    height: 150px;
+}
