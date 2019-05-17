@@ -1,3 +1,6 @@
+// let selectedRow = null;
+
+
 const movieTitle = document.getElementById("movieTitle");
 const movieDescription = document.getElementById("movieDescription");
 const genres = document.getElementById("checkbox");
@@ -105,8 +108,27 @@ submit.onclick = function() {
      const key = localStorage.key(i);
      const value = localStorage.getItem(key);
 
-    
+     output.innerHTML += ` <li> ${key}: <b>description:</b> ${JSON.parse(value).description} ${JSON.parse(value).genres} ${JSON.parse(value).movieRating} ${JSON.parse(value).published}<br /><button onclick="Delete(this);">Delete</button> </li>`;
+    }
 
-     output.innerHTML += `${key}: <b>description:</b> ${JSON.parse(value).description} ${JSON.parse(value).genres} ${JSON.parse(value).movieRating} ${JSON.parse(value).published}<br />`;
-}
+    function Delete(currentEl){
+       currentEl.parentNode.parentNode.removeChild(currentEl.parentNode);
+       }
 
+
+    // function edit(td) {
+    //     selectedRow = td.parentElement.parentElement;
+    //     document.getElementById("movieTitle").value = selectedRow.cells[0].innerHTML;
+    //     document.getElementById("movieDescription").value = selectedRow.cells[1].innerHTML;
+    //     document.getElementById("genres").value = selectedRow.cells[2].innerHTML;
+    //     document.getElementById("rating").value = selectedRow.cells[3].innerHTML;
+    //     document.getElementById("published").value = selectedRow.cells[4].innerHTML;
+    // }   
+
+    // function updateRecord(obj) {
+    //     selectedRow.cells[0].innerHTML = obj.title;
+    //     selectedRow.cells[1].innerHTML = obj.description;
+    //     selectedRow.cells[2].innerHTML = obj.genres;
+    //     selectedRow.cells[3].innerHTML = obj.movieRating;
+    //     selectedRow.cells[4].innerHTML = obj.published;
+    // }
