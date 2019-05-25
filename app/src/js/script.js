@@ -10,7 +10,7 @@ const output = document.getElementById("output");
 
 submit.onclick = function () {
     let arr = [];
-    let options = document.querySelectorAll(".checkbox-selection");
+    let options = document.querySelectorAll(".form-check-input");
     arr.push.apply(arr, [...options].reduce((prev, elem) => ((elem.checked && prev.push(elem.value)), prev), []));
 
     const obj = {
@@ -31,7 +31,7 @@ for (let i = 0; i < localStorage.length; i += 1) {
     const key = localStorage.key(i);
     const value = localStorage.getItem(key);
 
-    output.innerHTML += ` <li> ${key}: <b>description:</b> ${JSON.parse(value).description} ${JSON.parse(value).genres} ${JSON.parse(value).movieRating} ${JSON.parse(value).published}<br /><button id="${key}" onclick="deleteMovie(this);">Delete</button> </li>`;
+    output.innerHTML += ` <li> ${key}: <b>description:</b> ${JSON.parse(value).description} ${JSON.parse(value).genres} ${JSON.parse(value).movieRating} ${JSON.parse(value).published}<br /><button class="d-flex flex-row btn btn-danger" id="${key}" onclick="deleteMovie(this);">Delete</button> </li>`;
 }
 
 function deleteMovie(currentEl) {

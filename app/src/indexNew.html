@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Movies Database</title>
+</head>
+
+<body>
+    <h1 class="text-center text-light font-weight-bold bg-secondary">Movies Database</h1>
+    <label class="font-weight-bold text-monospace" id="insertTitle" for="insertTitle">Title:</label>
+    <textarea id="movieTitle" class="d-block mb-4" name="movieTitle" rows="1" cols="40"></textarea>
+
+    <label class="font-weight-bold text-monospace" id="shortDescription" for="shortDescription">Your opinion about the movie</label>
+    <textarea id="movieDescription" class="d-block mb-4" name="movieDescription" rows="1" cols="40"></textarea>
+
+    <div class="container">
+        <div class="form-check">
+            <ul class="checkbox-grid">
+
+                <p class="font-weight-bold text-monospace">Select movie's genres:</p>
+
+                <div class="row">
+                        <div class="col">
+                <div class="custom-control custom-checkbox custom-control-inline m-auto">
+                    <input type="checkbox" id="action" class="custom-control-input" name="genres" value="action">
+                    <label class="custom-control-label text-monospace" for="action">Action</label>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="custom-control custom-checkbox custom-control-inline m-auto">
+                    <input type="checkbox" id="adventure" class="custom-control-input" name="genres" value="adventure">
+                    <label class="custom-control-label text-monospace" for="adventure">Adventure</label>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="custom-control custom-checkbox custom-control-inline m-auto">
+                    <input type="checkbox" id="comedy" class="custom-control-input" name="genres" value="comedy">
+                    <label class="custom-control-label text-monospace" for="comedy">Comedy</label>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="custom-control custom-checkbox custom-control-inline m-auto">
+                    <input type="checkbox" id="crime" class="custom-control-input" name="genres" value="crime">
+                    <label class="custom-control-label text-monospace" for="crime">Crime</label>
+                </div>
+            </div>
+        </div>
+
+            <div class="row">
+                    <div class="col">
+                <div class="custom-control custom-checkbox custom-control-inline m-auto">
+                    <input type="checkbox" id="drama" class="custom-control-input" name="genres" value="drama">
+                    <label class="custom-control-label text-monospace" for="drama">Drama</label>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="custom-control custom-checkbox custom-control-inline m-auto">
+                    <input type="checkbox" id="fantasy" class="custom-control-input" name="genres" value="fantasy">
+                    <label class="custom-control-label text-monospace" for="fantasy">Fantasy</label>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="custom-control custom-checkbox custom-control-inline m-auto">
+                    <input type="checkbox" id="historical" class="custom-control-input" name="genres"
+                        value="historical">
+                    <label class="custom-control-label text-monospace" for="historical">Historical</label>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="custom-control custom-checkbox custom-control-inline m-auto">
+                    <input type="checkbox" id="historicalFiction" class="custom-control-input" name="genres"
+                        value="historicalFiction">
+                    <label class="custom-control-label text-monospace" for="historicalFiction">Historical Fiction</label>
+                </div>
+            </div>
+        </div>
+
+            <div class="row">
+                    <div class="col">
+                <div class="custom-control custom-checkbox custom-control-inline m-auto">
+                    <input type="checkbox" id="horror" class="custom-control-input" name="genres" value="horror">
+                    <label class="custom-control-label text-monospace" for="horror">Horror</label>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="custom-control custom-checkbox custom-control-inline m-auto">
+                    <input type="checkbox" id="magicRealism" class="custom-control-input" name="genres"
+                        value="magicRealism">
+                    <label class="custom-control-label text-monospace" for="magicRealism">Magic Realism</label>
+                </div>
+                </div>
+
+
+                <div class="col">
+                <div class="custom-control custom-checkbox custom-control-inline m-auto">
+                    <input type="checkbox" id="mystery" class="custom-control-input" name="genres" value="mystery">
+                    <label class="custom-control-label text-monospace" for="mystery">Mystery</label>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="custom-control custom-checkbox custom-control-inline m-auto">
+                    <input type="checkbox" id="paranoidFiction" class="custom-control-input" name="genres"
+                        value="paranoidFiction">
+                    <label class="custom-control-label text-monospace" for="paranoidFiction">Paranoid Fiction</label>
+                </div>
+            </div>
+        </div>
+
+            <div class="row">
+                    <div class="col">
+                <div class="custom-control custom-checkbox custom-control-inline m-auto">
+                    <input type="checkbox" id="philosophical" class="custom-control-input" name="genres"
+                        value="philosophical">
+                    <label class="custom-control-label text-monospace" for="philosophical">Philosophical</label>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="custom-control custom-checkbox custom-control-inline m-auto">
+                    <input type="checkbox" id="political" class="custom-control-input" name="genres" value="political">
+                    <label class="custom-control-label text-monospace" for="political">Political</label>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="custom-control custom-checkbox custom-control-inline m-auto">
+                    <input type="checkbox" id="romance" class="custom-control-input" name="genres" value="romance">
+                    <label class="custom-control-label text-monospace" for="romance">Romance</label>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="custom-control custom-checkbox custom-control-inline m-auto">
+                    <input type="checkbox" id="saga" class="custom-control-input" name="genres" value="saga">
+                    <label class="custom-control-label text-monospace" for="saga">Saga</label>
+                </div>
+            </div>
+        </div>
+
+            <div class="row">
+                    <div class="col">
+                <div class="custom-control custom-checkbox custom-control-inline m-auto">
+                    <input type="checkbox" id="satire" class="custom-control-input" name="genres" value="satire">
+                    <label class="custom-control-label text-monospace" for="satire">Satire</label>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="custom-control custom-checkbox custom-control-inline m-auto">
+                    <input type="checkbox" id="scienceFiction" class="custom-control-input" name="genres"
+                        value="scienceFiction">
+                    <label class="custom-control-label text-monospace" for="scienceFiction">Science Fiction</label>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="custom-control custom-checkbox custom-control-inline m-auto">
+                    <input type="checkbox" id="social" class="custom-control-input" name="genres" value="social">
+                    <label class="custom-control-label text-monospace" for="social">Social</label>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="custom-control custom-checkbox custom-control-inline m-auto">
+                    <input type="checkbox" id="speculative" class="custom-control-input" name="genres"
+                        value="speculative">
+                    <label class="custom-control-label text-monospace" for="speculative">Speculative</label>
+                </div>
+            </div>
+        </div>
+
+            <div class="row">
+                    <div class="col">
+                <div class="custom-control custom-checkbox custom-control-inline m-auto">
+                    <input type="checkbox" id="thriller" class="custom-control-input" name="genres" value="thriller">
+                    <label class="custom-control-label text-monospace" for="thriller">Thriller</label>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="custom-control custom-checkbox custom-control-inline m-auto">
+                    <input type="checkbox" id="urban" class="custom-control-input" name="genres" value="urban">
+                    <label class="custom-control-label text-monospace" for="urban">Urban</label>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="custom-control custom-checkbox custom-control-inline m-auto">
+                    <input type="checkbox" id="western" class="custom-control-input" name="genres" value="western">
+                    <label class="custom-control-label text-monospace" for="western">Western</label>
+                </div>
+            </div>
+
+            <div class="col">
+                    <div class="custom-control custom-checkbox custom-control-inline m-auto">
+                        <input type="checkbox" id="other" class="custom-control-input" name="genres" value="other">
+                        <label class="custom-control-label text-monospace" for="other">Other</label>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+    <div class="rating mt-4 mb-4 d-inline-block">
+        <div class="font-weight-bold text-monospace">
+            <p>Give the movie a rating</p>
+    <select class="custom-select" id="movieRating">
+            <option selected>Select Rating</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+        </div>
+    <!-- <div class="rating">
+        <label for="rating">Rating</label>
+        <select id="movieRating">
+            <option value="selectRating" selected>Select Rating</option>
+            <option value="10">10</option>
+            <option value="9">9</option>
+            <option value="8">8</option>
+            <option value="7">7</option>
+            <option value="6">6</option>
+            <option value="5">5</option>
+            <option value="4">4</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1">1</option>
+        </select>
+    </div> -->
+</div>
+
+    <div class="releaseDate mt-3 mb-3">
+        <label class="font-weight-bold text-monospace mr-4" id="publicationDate" for="publicationDate">Release Date</label>
+        <input type="date" id="published" name="published" min="1800-01-01" max="2019-05-25">
+    </div>
+
+    <div class="mt-4 mb-4">
+        <button type="button" id="submit" class="btn btn-outline-primary">Submit Movie</button>
+    </div>
+
+    <fieldset>
+        <legend class="font-weight-bold text-monospace">Movies stored</legend>
+        <div class="mt-3" id="output"></div>
+    </fieldset>
+    <script src="js/script.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
