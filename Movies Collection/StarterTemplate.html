@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="rebuild.css">
+    <title>Movies Collection</title>
+</head>
+
+<body>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <h5 class="my-0 mr-md-auto font-weight-normal">Movies Database</h5>
+        <nav class="my-2 my-md-0 mr-md-3">
+            <a class="p-2 text-dark" href="#">Home</a>
+            <a class="p-2 text-dark" href="#">About</a>
+        </nav>
+    </div>
+
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">Pricing</h1>
+        <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap
+            example. It’s built with default Bootstrap components and utilities with little customization.</p>
+    </div>
+
+
+    <div class="container">
+        <!-- First column -->
+        <div class="row">
+            <div class="col-4 themed-grid-col">
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="movieTitle" placeholder="Movie Title"
+                        aria-label="insertTitle" aria-describedby="basic-addon2">
+                </div>
+
+                <!-- <label class="d-flex" id="insertTitle" for="insertTitle">Title:</label>
+                <textarea id="movieTitle" class="mb-4" name="movieTitle" rows="1" cols="40"></textarea> -->
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="movieDescription"
+                        placeholder="Your opinion about the movie" aria-label="insertDescription"
+                        aria-describedby="basic-addon2">
+                </div>
+
+
+                <!-- <label class="d-flex" id="shortDescription" for="shortDescription">Your opinion about the movie</label>
+                <textarea id="movieDescription" name="movieDescription" rows="1" cols="40"></textarea> -->
+
+
+                <div class="rating d-flex mt-4">
+                    <label for="rating" class="mr-4">Rating</label>
+                    <select id="movieRating" class="mb-5">
+                        <option value="selectRating" selected>Select Rating</option>
+                        <option value="10">10</option>
+                        <option value="9">9</option>
+                        <option value="8">8</option>
+                        <option value="7">7</option>
+                        <option value="6">6</option>
+                        <option value="5">5</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                    </select>
+                </div>
+
+                <div class="releaseDate">
+                    <label id="publicationDate" class="mr-4" for="publicationDate">Release Date</label>
+                    <input type="date" id="published" name="published" value="2019-05-05" min="1800-01-01"
+                        max="2019-05-05">
+                </div>
+
+                <!-- <div class="mt-5">
+                    <input type="submit" class="btn btn-dark" id="submit" value="Submit Movie">
+                </div> -->
+
+            </div>
+
+            <!-- Second column -->
+            <div class="col-4 themed-grid-col">
+                <div class="checkbox custom-control custom-checkbox">
+                    <p>Select movie's genres:</p>
+                    <ul class="checkbox-grid list-unstyled list-group">
+
+
+                        <li>
+                            <input type="checkbox" id="action" class="custom-control-input" name="genres" value="action">
+                            <label class="custom-control-label" for="action">Action</label>
+                        </li>
+
+
+
+                        <li>
+                            <input type="checkbox" id="adventure" class="custom-control-input" name="genres"
+                                value="adventure">
+                            <label class="custom-control-label" for="adventure">Adventure</label>
+                        </li>
+
+
+
+                        <li>
+                            <input type="checkbox" id="comedy" class="custom-control-input" name="genres" value="comedy">
+                            <label class="custom-control-label" for="comedy">Comedy</label>
+                        </li>
+
+
+
+                        <li>
+                            <input type="checkbox" id="crime" class="custom-control-input" name="genres" value="crime">
+                            <label class="custom-control-label" for="crime">Crime</label>
+                        </li>
+
+
+
+                        <li>
+                            <input type="checkbox" id="drama" class="custom-control-input" name="genres" value="drama">
+                            <label class="custom-control-label" for="drama">Drama</label>
+                        </li>
+
+
+
+                        <li>
+                            <input type="checkbox" id="fantasy" class="custom-control-input" name="genres"
+                                value="fantasy">
+                            <label class="custom-control-label" for="fantasy">Fantasy</label>
+                        </li>
+
+
+
+                        <li>
+                            <input type="checkbox" id="historical" class="custom-control-input" name="genres"
+                                value="historical">
+                            <label class="custom-control-label" for="historical">Historical</label>
+                        </li>
+
+
+
+                        <li>
+                            <input type="checkbox" id="historicalFiction" class="custom-control-input" name="genres"
+                                value="historicalFiction">
+                            <label class="custom-control-label" for="historicalFiction">Historical Fiction</label>
+                        </li>
+
+
+
+                        <li>
+                            <input type="checkbox" id="horror" class="custom-control-input" name="genres" value="horror">
+                            <label class="custom-control-label" for="horror">Horror</label>
+                        </li>
+
+
+
+                        <li>
+                            <input type="checkbox" id="magicRealism" class="custom-control-input" name="genres"
+                                value="magicRealism">
+                            <label class="custom-control-label" for="magicRealism">Magic Realism</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="mystery" class="custom-control-input" name="genres"
+                                value="mystery">
+                            <label class="custom-control-label" for="mystery">Mystery</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Third column -->
+            <div class="col-4 themed-grid-col">
+                    <div class="checkbox custom-control custom-checkbox">
+                <ul class="checkbox-grid list-unstyled list-group">
+
+
+                    <li>
+                        <input type="checkbox" id="paranoidFiction" class="custom-control-input" name="genres"
+                            value="paranoidFiction">
+                        <label class="custom-control-label" for="paranoidFiction">Paranoid Fiction</label>
+                    </li>
+
+
+
+                    <li>
+                        <input type="checkbox" id="philosophical" class="custom-control-input" name="genres"
+                            value="philosophical">
+                        <label class="custom-control-label" for="philosophical">Philosophical</label>
+                    </li>
+
+
+
+                    <li>
+                        <input type="checkbox" id="political" class="custom-control-input" name="genres"
+                            value="political">
+                        <label class="custom-control-label" for="political">Political</label>
+                    </li>
+
+
+                    <li>
+                        <input type="checkbox" id="romance" class="custom-control-input" name="genres" value="romance">
+                        <label class="custom-control-label" for="romance">Romance</label>
+                    </li>
+
+
+
+                    <li>
+                        <input type="checkbox" id="saga" class="custom-control-input" name="genres" value="saga">
+                        <label class="custom-control-label" for="saga">Saga</label>
+                    </li>
+
+
+
+                    <li>
+                        <input type="checkbox" id="satire" class="custom-control-input" name="genres" value="satire">
+                        <label class="custom-control-label" for="satire">Satire</label>
+                    </li>
+
+
+
+                    <li>
+                        <input type="checkbox" id="scienceFiction" class="custom-control-input" name="genres"
+                            value="scienceFiction">
+                        <label class="custom-control-label" for="scienceFiction">Science Fiction</label>
+                    </li>
+
+
+
+                    <li>
+                        <input type="checkbox" id="social" class="custom-control-input" name="genres" value="social">
+                        <label class="custom-control-label" for="social">Social</label>
+                    </li>
+
+
+
+                    <li>
+                        <input type="checkbox" id="speculative" class="custom-control-input" name="genres"
+                            value="speculative">
+                        <label class="custom-control-label" for="speculative">Speculative</label>
+                    </li>
+
+
+
+                    <li>
+                        <input type="checkbox" id="thriller" class="custom-control-input" name="genres" value="thriller">
+                        <label class="custom-control-label" for="thriller">Thriller</label>
+                    </li>
+
+
+
+                    <li>
+                        <input type="checkbox" id="urban" class="custom-control-input" name="genres" value="urban">
+                        <label class="custom-control-label" for="urban">Urban</label>
+                    </li>
+
+
+
+                    <li>
+                        <input type="checkbox" id="western" class="custom-control-input" name="genres" value="western">
+                        <label class="custom-control-label" for="western">Western</label>
+                    </li>
+
+                </ul>
+
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- <div class="col themed-grid-col"> -->
+            
+                <input type="submit" class="btn btn-dark btn-block" id="submit" value="Submit Movie">
+            
+            <!-- </div> -->
+        </div>
+
+
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <fieldset>
+                    <legend>Movies stored</legend>
+                    <div id="output"></div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+
+    <!-- <button type="button" class="btn btn-dark">Dark</button> -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="scriptRebuild.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
