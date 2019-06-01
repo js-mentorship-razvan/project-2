@@ -31,7 +31,7 @@ for (let i = 0; i < localStorage.length; i += 1) {
     const key = localStorage.key(i);
     const value = localStorage.getItem(key);
 
-    output.innerHTML += ` <li> ${key}: <b>description:</b> ${JSON.parse(value).description} ${JSON.parse(value).genres} ${JSON.parse(value).movieRating} ${JSON.parse(value).published} <button id="${key}" onclick="deleteMovie(this);">Delete</button> <br /></li>`;
+    output.innerHTML += ` <li> <b>${key}</b>   <i>description</i>: ${JSON.parse(value).description} <i>genres</i>: ${JSON.parse(value).genres} <i>rating</i>: ${JSON.parse(value).movieRating} <i>release date</i>: ${JSON.parse(value).published} <button id="${key}" class="btn btn-danger btn-sm" onclick="deleteMovie(this);">Delete</button> <br /></li>`;
 }
 
 function deleteMovie(currentEl) {
